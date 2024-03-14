@@ -34,6 +34,9 @@ devDependencies:
   eslint-plugin-react-refresh:
     specifier: ^0.4.5
     version: 0.4.6(eslint@8.57.0)
+  ospinajuanp-reset-css:
+    specifier: ^1.0.7
+    version: 1.0.7
   vite:
     specifier: ^5.1.6
     version: 5.1.6
@@ -1671,6 +1674,11 @@ packages:
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
+    dev: true
+
+  /ospinajuanp-reset-css@1.0.7:
+    resolution: {integrity: sha512-GGGaGn/JNESbq1s5n7gZtAH0wSOhKf2vl6siJc5+D0HIVkBXAMp+hxzgpYOZGCMNUXWPufv6x1Nwgba6iDxRMw==}
+    hasBin: true
     dev: true
 
   /p-limit@3.1.0:
