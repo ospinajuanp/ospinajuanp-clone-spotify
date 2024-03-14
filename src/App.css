@@ -1,0 +1,37 @@
+.App{
+    min-width: 800px;
+    min-height: 100vh;
+    display: grid;
+    gap: 8px;
+    grid-template-areas:
+        "left-sidebar main-view right-sidebar"
+        "now-playing-bar now-playing-bar now-playing-bar";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.left-sidebar{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    grid-area: left-sidebar;
+}
+.main-view{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    grid-area: main-view;
+}
+.right-sidebar{
+    width: 280px;
+    height: 100%;
+    background-color: yellow;
+    grid-area: right-sidebar;
+}
+
+.now-playing-bar{
+    width: 100%;
+    height: 72px;
+    background-color: blue;
+    grid-area: now-playing-bar;
+}
