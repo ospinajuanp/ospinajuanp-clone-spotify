@@ -1,0 +1,176 @@
+svg{
+    width: 24px;
+    height: 24px;
+}
+.Player{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.Player__song{
+    width: 30%;
+    height: 61px;
+}
+.Player__controls{
+    width: 40%;
+    height: 61px;
+}
+.Player__controls-additional{
+    background: gray;
+    width: 30%;
+    height: 61px;
+}
+.Player__song-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8px;
+    min-width: 180px;
+}
+.Player__song-info-image{
+    width: 56px;
+    height: 56px;
+    margin-right: 8px;
+}
+.Player__song-info-text{
+    align-items: center;
+    height: 37px;
+    margin: 0 8px;
+    font-size: var(--fz14);
+    font-weight: 400;
+}
+.Player__song-info-text div:nth-child(1){
+    height: 20px;
+}
+.Player__song-info-text div:nth-child(2){
+    height: 17px;
+    font-size: 0.75rem;
+    opacity: .7;
+}
+.Player__song-info-icon{
+    width: 32px;
+    height: 32px;
+    padding: 8px 0;
+    opacity: .7;
+}
+
+.Player__controls{
+    display: flex;
+    flex-direction: column;
+}
+
+.Player__controls-icons{
+    width: 100%;
+    min-width: 180px;
+    height: 32px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Player__controls-icons-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
+.Player__controls-icons-center{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+}
+.Player__controls-icons-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.Player__controls-icons-left div, .Player__controls-icons-right  div, .Player__controls-icons-center div{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    opacity: .7;
+}
+.Player__controls-icons-center div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 32px;
+    opacity: 1;
+}
+
+.Player__controls-icons-center div svg{
+    width: 12px;
+    height: 12px;
+}
+.Player__controls-icons-right div:nth-child(2){
+    transform: rotate(90deg);
+    
+}
+.Player__controls-icons-timebar{
+    width: 100%;
+    height: 17px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: var(--fz12);
+    font-weight: 400px;
+}
+.Player__controls-icons-timebar-timer, .Player__controls-icons-timebar-progress, .Player__controls-icons-timebar-duration{
+    min-width: 40px;
+}
+.Player__controls-icons-timebar-timer{
+    text-align: end;
+    overflow: hidden;
+}
+.Player__controls-icons-timebar-progress{
+    width: 100%;
+}
+.Player__controls-additional{
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.Player__controls-additional-icons{
+    display: flex;
+    flex-flow: row;
+}
+.Player__controls-additional-icons div{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Player__controls-additional-icons div svg{
+    width: 16px;
+    height: 16px;
+}
+.Player__controls-additional-icons-volume{
+    width: 64px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
