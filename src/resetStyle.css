@@ -14,7 +14,7 @@
 /* Here we define custom properties */
 :root {
   /* Here we define color*/
-  --color-primary:##000;
+  --color-primary:#121212;
   --color-secondary:#f5f5f5;
   --color-bottom-primary:#0095f6;
   /* Here we define typography*/
