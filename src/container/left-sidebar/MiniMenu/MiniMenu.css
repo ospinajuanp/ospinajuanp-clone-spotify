@@ -31,7 +31,6 @@
     flex-direction: column;
     flex: 1;
     width: 100%;
-    border-radius: 8px;
     cursor: default;
     overflow: hidden;
 }
@@ -49,10 +48,45 @@
 .MiniMenu__search-songs{
     width: 100%;
     max-height: 100%;
+    padding-right: -10px;
     height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.MiniMenu__search-songs {
+    /* Estilos predeterminados */
+    transition: background 0.3s linear; /* Transición de fondo para el estado normal */
+}
+/* Estilo para la barra de desplazamiento */
+.MiniMenu__search-songs::-webkit-scrollbar {
+     /* Ancho de la barra de desplazamiento */
+    width: 10px;
+}
+
+  /* Estilo para el riel de la barra de desplazamiento */
+.MiniMenu__search-songs::-webkit-scrollbar-track {
+    background: #000; /* Color de fondo del riel */
+}
+
+  /* Estilo para el thumb (la parte desplazable de la barra) */
+.MiniMenu__search-songs::-webkit-scrollbar-thumb {
+    background: #000; /* Color del thumb */
+}
+
+.MiniMenu__search-songs.hoverScroll::-webkit-scrollbar-thumb {
+    background: #f1f1f1; /* Color del thumb al pasar el cursor sobre él */
+}
+
+.MiniMenu__search-songs.hoverScroll::-webkit-scrollbar-track {
+    background: #9f9f9f; /* Color de fondo del riel */
+}
+
+.MiniMenu__search-songs div svg{
+    margin: 8px;
+    width: 48px;
+    height: 48px;
 }

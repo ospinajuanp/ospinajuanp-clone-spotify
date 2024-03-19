@@ -4,8 +4,18 @@ import { ImBooks } from "react-icons/im";
 import { GiMusicSpell } from "react-icons/gi";
 
 import './MiniMenu.css'
+import { useState } from "react";
 
 function MiniMenu() {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+    
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
 
 return (
     <div className='MiniMenu'>
@@ -19,11 +29,15 @@ return (
                 </li>
             </ul>
         </div>
+
+
         <div className="MiniMenu__search">
             <div className="MiniMenu__search-search">
                 <ImBooks />
             </div>
-            <div className="MiniMenu__search-songs">
+            <div className={`MiniMenu__search-songs ${isHovered ? 'hoverScroll' : ''}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}>
                 <div>
                     <GiMusicSpell/>
                     <GiMusicSpell/>
@@ -49,6 +63,11 @@ return (
                 </div>
             </div>
         </div>
+
+
+
+
+
     </div>
     )
 }
