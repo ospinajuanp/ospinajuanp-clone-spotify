@@ -1,15 +1,23 @@
 import { FaAngleLeft,FaAngleRight,FaArrowDown,FaRegBell  } from "react-icons/fa";
 import Card from './../components/Card'
 import './Explorer.css'
+import { useState } from "react";
 
 function Explorer() {
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+    
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
 
 return (
     <div className='Explorer'>
         <div className="Explorer__navegation">
             <div className="Explorer__navegation-left">
                 <div className="pointer"><FaAngleLeft/></div>
-                <div className="pointer"><FaAngleRight/></div>
             </div>
 
             <div className="Explorer__navegation-right">
@@ -33,7 +41,10 @@ return (
             </div>
         </div>
 
-        <div className="Explorer__content-explorar">
+        <div className={`Explorer__content-explorar ${isHovered ? 'hoverScroll' : ''}`} 
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        >
             <div className="Explorer__content">
                 <div className="Explorer__content-title">
                     <div>

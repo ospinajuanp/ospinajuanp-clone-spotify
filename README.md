@@ -8,6 +8,8 @@
 ## Descripción
 
 Este proyecto es un clon de Spotify que busca replicar algunas de las funcionalidades básicas de la popular app de música.
+Se a implementado la sección principal de la web lo que es el miniMenu - zona de exploración/home - reproductor(Visual no funcional)
+Adicionalmente tiene algunas interacciones como lo son algunos hover y los scroll en los componentes
 
 ## Tecnologías Utilizadas
 
@@ -15,6 +17,10 @@ Este proyecto es un clon de Spotify que busca replicar algunas de las funcionali
 - CSS
 - JavaScript
 - React
+
+## Librerías
+
+- React icons
 
 ## Herramientas Utilizadas
 
@@ -52,4 +58,4 @@ Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en ponerte en
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+Este proyecto está bajo la Licencia [MIT](./LICENSE).
