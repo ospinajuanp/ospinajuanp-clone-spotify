@@ -14,7 +14,7 @@ function App() {
         <MiniMenu/>
         </div>
       <div className='main-view'><Explorer/></div>
-      <div className='right-sidebar'><ArtistData/></div>
+      {/* <div className='right-sidebar'><ArtistData/></div> */}
       <div className='now-playing-bar'><Player/></div>
     </div>
   )

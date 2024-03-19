@@ -1,0 +1,33 @@
+.Card{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Card__image{
+    overflow: hidden;
+}
+
+.Card__image img{
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+}
+.Card__text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.Card__text-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.Card__text-artist{
+    font-size: 14px;
+    font-weight: 400;
+}
