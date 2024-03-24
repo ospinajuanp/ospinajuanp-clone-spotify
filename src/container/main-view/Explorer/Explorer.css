@@ -123,12 +123,13 @@ svg{
     grid-auto-rows: repeat(1, minmax(0, 1fr));
     margin-left:-12px;
 }
-
+.Explorer__content-cards > :nth-child(n+4) {
+    display: none;
+}
 .Explorer__content-explorar::-webkit-scrollbar {
     /* Ancho de la barra de desplazamiento */
     width: 10px;
 }
-
  /* Estilo para el riel de la barra de desplazamiento */
 .Explorer__content-explorar::-webkit-scrollbar-track {
    background: #000; /* Color de fondo del riel */
@@ -145,4 +146,73 @@ svg{
 
 .Explorer__content-explorar.hoverScroll::-webkit-scrollbar-track {
    background: #9f9f9f; /* Color de fondo del riel */
+}
+
+
+
+@media (min-width: 826px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+5) {
+        display: none;
+    }
+}
+@media (min-width: 1026px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+6) {
+        display: none;
+    }
+}
+@media (min-width: 1226px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+7) {
+        display: none;
+    }
+}
+@media (min-width: 1426px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+8) {
+        display: none;
+    }
+}
+@media (min-width: 1626px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+9) {
+        display: none;
+    }
+}
+@media (min-width: 1826px) {
+    .Explorer__content-cards {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    .Explorer__content-cards > :nth-child(n+4) {
+        display: grid;
+    }
+    .Explorer__content-cards > :nth-child(n+10) {
+        display: none;
+    }
 }

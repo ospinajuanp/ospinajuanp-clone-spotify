@@ -71,9 +71,16 @@ return (
                     </div>
                 </div>
                 <div className="Explorer__content-cards">
-                <Card/>
-                <Card/>
-                <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
             </div>
 
