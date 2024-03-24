@@ -9,7 +9,7 @@
 
 Este proyecto es un clon de Spotify que busca replicar algunas de las funcionalidades básicas de la popular app de música.
 Se a implementado la sección principal de la web lo que es el miniMenu - zona de exploración/home - reproductor(Visual no funcional)
-Adicionalmente tiene algunas interacciones como lo son algunos hover y los scroll en los componentes
+Adicionalmente tiene algunas interacciones como animaciones interactividad con algunos hover y los scroll en los componentes para no afectar toda la web, tambien tiene algunos stylos intentando mantener la esencia original
 
 ## Tecnologías Utilizadas
 
