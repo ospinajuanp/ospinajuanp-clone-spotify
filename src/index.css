@@ -1,0 +1,18 @@
+body{
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    /* Ancho de la barra de desplazamiento */
+    height: 10px;
+}
+
+ /* Estilo para el riel de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+   background: #f1f1f1; /* Color de fondo del riel */
+}
+
+ /* Estilo para el thumb (la parte desplazable de la barra) */
+body::-webkit-scrollbar-thumb {
+   background: #9f9f9f; /* Color del thumb */
+}
