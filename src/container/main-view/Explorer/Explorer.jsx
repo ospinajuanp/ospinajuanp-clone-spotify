@@ -1,7 +1,9 @@
-import { FaAngleLeft,FaAngleRight,FaArrowDown,FaRegBell  } from "react-icons/fa";
+import { FaAngleLeft,FaArrowDown,FaRegBell  } from "react-icons/fa";
 import Card from './../components/Card'
+
 import './Explorer.css'
 import { useState } from "react";
+import Artist from "../components/Artist";
 
 function Explorer() {
     const [isHovered, setIsHovered] = useState(false);
@@ -45,6 +47,7 @@ return (
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         >
+
             <div className="Explorer__content">
                 <div className="Explorer__content-title">
                     <div>
@@ -58,6 +61,23 @@ return (
                 <Card/>
                 <Card/>
                 <Card/>
+                </div>
+            </div>
+            <div className="Explorer__content">
+                <div className="Explorer__content-title">
+                    <div>
+                        Artistas
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className="Explorer__content-cards">
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
                 </div>
             </div>
             
