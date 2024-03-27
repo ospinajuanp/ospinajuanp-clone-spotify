@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     align-items: center;
     justify-content: center;
 }
@@ -21,6 +21,9 @@
 
 .Menu__navegation-list{
     padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .Menu__navegation-home,.Menu__navegation-search,.Menu__search-search{
     display: flex;

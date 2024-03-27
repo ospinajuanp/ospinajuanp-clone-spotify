@@ -5,8 +5,7 @@ import { ImBooks } from "react-icons/im";
 import { useState } from "react";
 import Artist from "../../main-view/components/Artist";
 import './Menu.css'
-
-function Menu() {
+function Menu({changeState=null, state=null}) {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -38,7 +37,7 @@ return (
 
         <div className="Menu__search">
             <div className="Menu__search-search">
-                <ImBooks />
+                <ImBooks onClick={changeState}/>
                 <div>Tu Biblioteca</div>
                 <FaPlus/>
                 <FaArrowRightLong/>
@@ -47,27 +46,8 @@ return (
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
-                    <Artist text="LeftText"/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
                 </div>
             </div>
         </div>

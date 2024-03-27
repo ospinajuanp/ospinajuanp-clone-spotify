@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import Artist from "../../main-view/components/Artist";
 
-function MiniMenu() {
+function MiniMenu({changeState=null, state=null}) {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -32,33 +32,24 @@ return (
 
         <div className="MiniMenu__search">
             <div className="MiniMenu__search-search">
-                <ImBooks />
+                <ImBooks onClick={changeState}/>
             </div>
             <div className={`MiniMenu__search-songs ${isHovered ? 'hoverScroll' : ''}`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
-                    <Artist text="HiddeText"/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
+                    <Artist text={!state && "HiddeText"}/>
                 </div>
             </div>
         </div>
