@@ -10,8 +10,8 @@ function App() {
   return (
     <div className='App'>
       <div className='left-sidebar'>
-        {/* <Menu/> */}
-        <MiniMenu/>
+        <Menu/>
+        {/* <MiniMenu/> */}
         </div>
       <div className='main-view'><Explorer/></div>
       {/* <div className='right-sidebar'><ArtistData/></div> */}

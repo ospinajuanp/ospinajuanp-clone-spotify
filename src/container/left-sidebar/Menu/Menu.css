@@ -1,4 +1,102 @@
 .Menu{
     width: 280px;
-    height: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.Menu svg{
+    width: 32px;
+    height: 32px;
+}
+
+.Menu__navegation{
+    width: 100%;
+    border-radius: 8px;
+    cursor: default;
+    overflow-x: hidden;
+}
+
+.Menu__navegation-list{
+    padding: 8px 12px;
+}
+.Menu__navegation-home,.Menu__navegation-search,.Menu__search-search{
+    display: flex;
+    flex-direction: row;
+    padding: 4px 12px;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+.Menu__search{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 8px 12px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.Menu__search-search{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.Menu__search-search svg{
+    width: 24px;
+    height: 24px;
+}
+
+
+.Menu__search-songs{
+    width: 100%;
+    max-height: 100%;
+    height: 60vh;
+    padding-right: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Menu__search-songs {
+    /* Estilos predeterminados */
+    transition: background 0.3s linear; /* Transición de fondo para el estado normal */
+}
+/* Estilo para la barra de desplazamiento */
+.Menu__search-songs::-webkit-scrollbar {
+     /* Ancho de la barra de desplazamiento */
+    width: 10px;
+}
+
+  /* Estilo para el riel de la barra de desplazamiento */
+.Menu__search-songs::-webkit-scrollbar-track {
+    background: #000; /* Color de fondo del riel */
+}
+
+  /* Estilo para el thumb (la parte desplazable de la barra) */
+.Menu__search-songs::-webkit-scrollbar-thumb {
+    background: #000; /* Color del thumb */
+}
+
+.Menu__search-songs.hoverScroll::-webkit-scrollbar-thumb {
+    background: #f1f1f1; /* Color del thumb al pasar el cursor sobre él */
+}
+
+.Menu__search-songs.hoverScroll::-webkit-scrollbar-track {
+    background: #9f9f9f; /* Color de fondo del riel */
+}
+
+.Menu__search-songs div svg{
+    margin: 8px;
+    width: 48px;
+    height: 48px;
 }

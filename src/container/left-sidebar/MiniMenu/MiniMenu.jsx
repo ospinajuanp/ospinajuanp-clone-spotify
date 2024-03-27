@@ -1,8 +1,5 @@
 import { MdOutlineHome,MdSearch  } from "react-icons/md";
 import { ImBooks } from "react-icons/im";
-
-import { GiMusicSpell } from "react-icons/gi";
-
 import './MiniMenu.css'
 import { useState } from "react";
 
@@ -65,11 +62,6 @@ return (
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
     )
 }
