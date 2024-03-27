@@ -6,6 +6,8 @@ import { GiMusicSpell } from "react-icons/gi";
 import './MiniMenu.css'
 import { useState } from "react";
 
+import Artist from "../../main-view/components/Artist";
+
 function MiniMenu() {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -39,27 +41,27 @@ return (
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
-                    <GiMusicSpell/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
+                    <Artist text="HiddeText"/>
                 </div>
             </div>
         </div>

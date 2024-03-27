@@ -1,6 +1,5 @@
 import { FaAngleLeft,FaArrowDown,FaRegBell  } from "react-icons/fa";
 import Card from './../components/Card'
-
 import './Explorer.css'
 import { useState } from "react";
 import Artist from "../components/Artist";

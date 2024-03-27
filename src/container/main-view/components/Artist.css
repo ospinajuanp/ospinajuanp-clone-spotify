@@ -6,7 +6,7 @@
     gap: 8px;
 }
 .Artist__image{
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -59,12 +59,23 @@
     font-size: 16px;
     font-weight: 600;
 }
-
-
-
 .Artist__text-artist{
     font-size: 14px;
     font-weight: 400;
 }
 
+.HiddeText{
+    display: none;
+}
+.HiddeText__play{   
+    width: 20px;
+    height: 20px;
+}
 
+.Artist:hover .HiddeText__play{
+    /* bottom: 0;
+    right: 0; */
+    transform: translate(60%, -80%);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.6s ease; 
+}
