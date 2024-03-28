@@ -101,8 +101,7 @@ svg{
     max-height: 100%;
     height: 75vh;
     padding: 16px;
-    overflow-y: scroll;
-    
+    overflow-y: scroll;    
 }
 
 .Explorer__content-title{
@@ -215,6 +214,133 @@ svg{
         display: grid;
     }
     .Explorer__content-cards > :nth-child(n+10) {
+        display: none;
+    }
+}
+
+/* Styles para State Song pequeño */
+.Explorer__contentMini + .Explorer__contentMini {
+    margin-top: 24px; /* Agrega margen superior al segundo elemento .Explorer__content */
+}
+
+.Explorer__contentMini-explorar{
+    width: 100%;
+    max-height: 100%;
+    height: 75vh;
+    padding: 16px;
+    overflow-y: scroll;    
+}
+
+.Explorer__contentMini-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Explorer__contentMini-title div:nth-child(1){
+    font-size: 26px;
+
+}
+.Explorer__contentMini-cards{
+    width: calc(100% + 24px);
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(1, minmax(0, 1fr));
+    margin-left:-12px;
+}
+.Explorer__contentMini-cards > :nth-child(n+3) {
+    display: none;
+}
+.Explorer__contentMini-explorar::-webkit-scrollbar {
+    /* Ancho de la barra de desplazamiento */
+    width: 10px;
+}
+ /* Estilo para el riel de la barra de desplazamiento */
+.Explorer__contentMini-explorar::-webkit-scrollbar-track {
+   background: transparent; /* Color de fondo del riel */
+}
+
+ /* Estilo para el thumb (la parte desplazable de la barra) */
+.Explorer__contentMini-explorar::-webkit-scrollbar-thumb {
+   background: transparent; /* Color del thumb */
+}
+
+.Explorer__contentMini-explorar.hoverScroll::-webkit-scrollbar-thumb {
+   background: #f1f1f1; /* Color del thumb al pasar el cursor sobre él */
+}
+
+.Explorer__contentMini-explorar.hoverScroll::-webkit-scrollbar-track {
+   background: #9f9f9f; /* Color de fondo del riel */
+}
+
+
+
+@media (min-width: 826px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+4) {
+        display: none;
+    }
+}
+@media (min-width: 1026px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+5) {
+        display: none;
+    }
+}
+@media (min-width: 1226px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+6) {
+        display: none;
+    }
+}
+@media (min-width: 1426px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+7) {
+        display: none;
+    }
+}
+@media (min-width: 1626px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+8) {
+        display: none;
+    }
+}
+@media (min-width: 1826px) {
+    .Explorer__contentMini-cards {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .Explorer__contentMini-cards > :nth-child(n+3) {
+        display: grid;
+    }
+    .Explorer__contentMini-cards > :nth-child(n+9) {
         display: none;
     }
 }

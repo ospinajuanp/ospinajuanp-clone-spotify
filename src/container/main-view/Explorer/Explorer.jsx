@@ -4,7 +4,7 @@ import './Explorer.css'
 import { useState } from "react";
 import Artist from "../components/Artist";
 
-function Explorer() {
+function Explorer({state=null}) {
     const [isHovered, setIsHovered] = useState(false);
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -47,8 +47,8 @@ return (
         onMouseLeave={handleMouseLeave}
         >
 
-            <div className="Explorer__content">
-                <div className="Explorer__content-title">
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
                     <div>
                         Hecho para ti
                     </div>
@@ -56,32 +56,18 @@ return (
                         Mostrar Todo
                     </div>
                 </div>
-                <div className="Explorer__content-cards">
-                <Card/>
-                <Card/>
-                <Card/>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
             </div>
-            <div className="Explorer__content">
-                <div className="Explorer__content-title">
-                    <div>
-                        Artistas
-                    </div>
-                    <div>
-                        Mostrar Todo
-                    </div>
-                </div>
-                <div className="Explorer__content-cards">
-                    <Artist/>
-                    <Artist/>
-                    <Artist/>
-                    <Artist/>
-                    <Artist/>
-                </div>
-            </div>
-            
-            <div className="Explorer__content">
-                <div className="Explorer__content-title">
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
                     <div>
                         Estaciones populares
                     </div>
@@ -89,8 +75,65 @@ return (
                         Mostrar Todo
                     </div>
                 </div>
-                <div className="Explorer__content-cards">
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
                     <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+            </div>
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
+                    <div>
+                        Escuchado recientemente
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Artist/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+            </div>
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
+                    <div>
+                        Artistas populares
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                    <Artist/>
+                </div>
+            </div>
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
+                    <div>
+                        Nuevo lanzamiento para ti
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
                     <Card/>
                     <Card/>
                     <Card/>
@@ -103,21 +146,72 @@ return (
                 </div>
             </div>
 
-            <div className="Explorer__content">
-                <div className="Explorer__content-title">
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
                     <div>
-                        Escuchado Recientemente
+                        Albumes populares
                     </div>
                     <div>
                         Mostrar Todo
                     </div>
                 </div>
-                <div className="Explorer__content-cards">
-                <Card/>
-                <Card/>
-                <Card/>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
             </div>
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
+                    <div>
+                        En tendencia
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+            </div>
+
+            <div className={state ? "Explorer__content" :"Explorer__contentMini"}>
+                <div className={state ? "Explorer__content-title" :"Explorer__contentMini-title"}>
+                    <div>
+                        Descubre las selecciones para ti
+                    </div>
+                    <div>
+                        Mostrar Todo
+                    </div>
+                </div>
+                <div className={state ? "Explorer__content-cards" :"Explorer__contentMini-cards"}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+            </div>
+
 
         </div>
     </div>

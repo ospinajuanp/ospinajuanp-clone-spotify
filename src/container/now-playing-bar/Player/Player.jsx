@@ -6,14 +6,14 @@ import { AiFillSound } from "react-icons/ai";
 import { SlSizeFullscreen } from "react-icons/sl";
 import './Player.css'
 
-function Player() {
+function Player({changeState=null}) {
 
 return (
     <div className='Player'>
 
         <div className='Player__song'>
             <div className='Player__song-info'>
-                <div className='Player__song-info-image'>
+                <div className='Player__song-info-image pointer' onClick={changeState}>
                     <img src="https://i.scdn.co/image/ab67616d0000485173456ed697350847810e52b3" alt=""/>
                 </div>
                 <div className='Player__song-info-text'>

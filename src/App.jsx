@@ -9,10 +9,17 @@ import { useState } from 'react'
 function App() {
   const [isMenu, setMenu] = useState(true)
   const [isMiniMenu, setMiniMenu] = useState(false)
+  const [isSong, setSong] = useState(false)
 
   const handleMenu = () => {
     setMenu(!isMenu)
     setMiniMenu(!isMiniMenu)
+    setSong(!isSong)
+  }
+  const handleSong = () => {
+    setMenu(!isMenu)
+    setMiniMenu(!isMiniMenu)
+    setSong(!isSong)
   }
   return (
     <div className='App'>
@@ -20,9 +27,9 @@ function App() {
         {isMenu && <Menu changeState={handleMenu} state={isMenu} />}
         {isMiniMenu && <MiniMenu changeState={handleMenu} state={isMenu} />}
         </div>
-      <div className='main-view'><Explorer/></div>
-      {/* <div className='right-sidebar'><ArtistData/></div> */}
-      <div className='now-playing-bar'><Player/></div>
+      <div className='main-view'><Explorer state={isSong}/></div>
+      {isSong && <div className='right-sidebar'><ArtistData/></div>}
+      <div className='now-playing-bar'><Player changeState={handleSong}/></div>
     </div>
   )
 }
