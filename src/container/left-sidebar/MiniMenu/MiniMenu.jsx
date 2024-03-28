@@ -31,7 +31,7 @@ return (
 
 
         <div className="MiniMenu__search">
-            <div className="MiniMenu__search-search">
+            <div className="MiniMenu__search-search pointer">
                 <ImBooks onClick={changeState}/>
             </div>
             <div className={`MiniMenu__search-songs ${isHovered ? 'hoverScroll' : ''}`}

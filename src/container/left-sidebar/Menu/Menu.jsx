@@ -37,7 +37,7 @@ return (
 
         <div className="Menu__search">
             <div className="Menu__search-search">
-                <ImBooks onClick={changeState}/>
+                <ImBooks onClick={changeState} className="pointer"/>
                 <div>Tu Biblioteca</div>
                 <FaPlus/>
                 <FaArrowRightLong/>
@@ -46,6 +46,16 @@ return (
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
+                    <Artist text={state && "LeftText"}/>
                     <Artist text={state && "LeftText"}/>
                     <Artist text={state && "LeftText"}/>
                 </div>
